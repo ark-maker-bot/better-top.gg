@@ -1,0 +1,20 @@
+{
+  "name": "better-top.gg",
+  "version": "1.0.0",
+  "description": "This is an API that creates shortcuts for the top.gg API",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "api",
+    "top.gg",
+    "top",
+    "better"
+  ],
+  "author": ".nero",
+  "license": "ISC",
+  "dependencies": {
+    "@top-gg/sdk": "^3.0.6"
+  }
+}

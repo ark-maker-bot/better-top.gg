@@ -1,0 +1,1 @@
+const BDL = require('./index'), top = new BDL('TOKEN', client);
