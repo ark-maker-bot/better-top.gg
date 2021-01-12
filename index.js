@@ -10,43 +10,47 @@ BetterTop.prototype = {
     this.dbl = new DBL(this.token, this.client);
   },
   post: function(){
+    if(!this.dbl)return;
     this.dbl.postStats(this.client.guilds.cache.size);
   },
   auto_post: function(timeMS){
+    if(!this.dbl)return;
     if(timeMS <= 1000)timeMS = (1000*60*60);
     setInterval(() => {
       this.post();
     }, timeMS);
   },
   get_stats: async function(id){
-    if(!id)return null;
+    if(!id || !this.dbl)return null;
     const stats = await this.dbl.getStats(id);
     if(!stats)return null;
     return stats;
   },
   get_bot: async function(id){
-    if(!id)return null;
+    if(!id || !this.dbl)return null;
     const bot = await this.dbl.getBot(id);
     if(!bot)return null;
     return bot;
   },
   get_user: async function(id){
-    if(!id)return null;
+    if(!id || !this.dbl)return null;
     const user = await this.dbl.getUser(id);
     if(!user)return null;
     return user;
   },
   get_votes: async function(){
+    if(!this.dbl)return;
     const votes = await this.dbl.getVotes();
     if(!votes)return null;
     return votes;
   },
   has_voted: async function(id){
-    if(!id)return null;
+    if(!id || !this.dbl)return null;
     const hasVoted = await this.dbl.hasVoted(id);
     return hasVoted;
   },
   is_weekend: async function(){
+    if(!this.dbl)return;
     const isWeekend = await this.dbl.isWeekend();
     return isWeekend;
   }
