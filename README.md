@@ -20,6 +20,6 @@ get_votes()
 get_user(id),
 get_bot(id),
 get_stats(id),
-auto_post(id),
+auto_post(timeMS),
 post()
 ```
