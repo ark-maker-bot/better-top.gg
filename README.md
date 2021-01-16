@@ -9,6 +9,8 @@ const Discord = require('discord.js'), client = new Discord.Client();
 const BDL = require('better-top.gg'), top = new BDL('TOP.GG Token', client); // client is the discord client
 ```
 
+Sorry for the incorrect code. I have fixed the issue.
+
 When using this please run setup before you use the other functions.
 
 ## List of functions

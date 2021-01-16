@@ -7,7 +7,7 @@ function BetterTop(token, client){
 }
 BetterTop.prototype = {
   setup: function(){
-    this.dbl = new DBL(this.token, this.client);
+    this.dbl = new DBL.Api(this.token);
   },
   post: function(){
     if(!this.dbl)return;
