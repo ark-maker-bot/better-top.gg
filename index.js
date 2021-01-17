@@ -11,7 +11,9 @@ BetterTop.prototype = {
   },
   post: function(){
     if(!this.dbl)return;
-    this.dbl.postStats(this.client.guilds.cache.size);
+    this.dbl.postStats({
+      serverCount: this.client.guilds.cache.size
+    });
   },
   auto_post: function(timeMS){
     if(!this.dbl)return;

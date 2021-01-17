@@ -1,6 +1,6 @@
 {
   "name": "better-top.gg",
-  "version": "1.4.6",
+  "version": "1.4.7",
   "description": "This is an API that creates shortcuts for the top.gg API",
   "main": "index.js",
   "repository": {
