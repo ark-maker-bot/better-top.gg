@@ -10,8 +10,7 @@ const BDL = require('better-top.gg'), top = new BDL('TOP.GG Token', client); // 
 ```
 
 Sorry for the incorrect code. I have fixed the issue.
-
-When using this please run setup before you use the other functions.
+Setup runs when you init the BDL. (To save code and performance)
 
 ## List of functions
 ```

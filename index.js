@@ -16,6 +16,7 @@ BetterTop.prototype = {
   auto_post: function(timeMS){
     if(!this.dbl)return;
     if(timeMS <= 1000)timeMS = (1000*60*60);
+    this.post();
     setInterval(() => {
       this.post();
     }, timeMS);
