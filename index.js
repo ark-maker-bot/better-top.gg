@@ -41,7 +41,7 @@ BetterTop.prototype = {
     return user;
   },
   get_votes: async function(){
-    if(!this.dbl)return;
+    if(!this.dbl)return null;
     const votes = await this.dbl.getVotes();
     if(!votes)return null;
     return votes;
@@ -52,7 +52,7 @@ BetterTop.prototype = {
     return hasVoted;
   },
   is_weekend: async function(){
-    if(!this.dbl)return;
+    if(!this.dbl)return null;
     const isWeekend = await this.dbl.isWeekend();
     return isWeekend;
   }
